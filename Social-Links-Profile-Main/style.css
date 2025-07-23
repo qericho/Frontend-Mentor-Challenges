@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 8%);
+    font-family: 'Inter';
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding-top: 5%;
+}
+body p{
+    font-size: 14px;
+}
+.card-container{
+    background-color: hsl(0, 0%, 12%);
+    width: 400px;
+    height: 550px;
+    padding: 40px 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    gap: 20px;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.profile img{
+    width: 80px;
+    border-radius: 100%;
+}
+.profile .name{
+    font-size: 21px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);;
+}
+.profile .address{
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(75, 94%, 57%);
+}
+.profile .job-des{
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);;
+}
+.socials{
+    max-width: 350px;
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.btn-social{
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 30%);
+}
+.btn-social:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+}
