@@ -12,7 +12,7 @@ a {
 /* Body styles */
 body{
     font-family: "Epilogue";
-    background-color: hsl(0, 0%, 90%);
+    background-color: hsl(0, 0%, 100%);
 }
 body p{
     font-size: 18px;
@@ -75,7 +75,7 @@ nav{
   left: -20px;
   width: 150px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 8px;
   z-index: 100;
   flex-direction: column;
@@ -83,7 +83,7 @@ nav{
   display: flex;
   align-items: center;
   justify-content: center;
-}
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;}
 .dropdown-menu img{
     width: 15px;
 }
@@ -159,27 +159,35 @@ nav{
     display: none;
 }
 .hero-section{
-    padding: 50px 120px;
+    height: 100%;
+    width: 100%;
+    padding: 100px 120px;
 }
 .hero-container{
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.hero-img{
+    height: 550px;
+}
 .hero-img img{
-    width: 400px;
+    height: 100%;
 }
 .hero-info-container{
+    padding: 50px 0 0 0;
+    height: 550px;
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    justify-content: space-between;
 }
 .hero-info{
     width: 500px;
     display: flex;
     align-items: start;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
 }
 .hero-info h1{
     font-size: 62px;
@@ -285,9 +293,29 @@ nav{
     .hero-info p{
         text-align: center;
     }
+    .hero-info-container{
+        justify-content: center;
+        gap: 90px;
+    }
+    .hero-container{
+        gap: 0;
+    }
 }
 @media (max-width: 540px){
     /* hero */
+    .hero-section{
+        padding: 30px 20px;
+    }
+    .hero-info-container{
+        gap: 0;
+    }
+    .hero-info-container{
+        justify-content: center;
+        gap: 80px;
+    }
+    .hero-img{
+        height: 300px;
+    }
     .img-desktop{
         display: none;
     }
