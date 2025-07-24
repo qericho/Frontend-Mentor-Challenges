@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro-Section</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav>
+    <!-- Logo and NavLinks -->
+     <div class="logo-navlinks">
+      <!-- Logo -->
+       <img class="logo"
+        src="./images/logo.svg" alt="Logo">
+       <!-- Links -->
+          <ul class="navLinks" id="mobileMenu">
+            <li class="dropdown">
+              <a href="#">Features</a>
+              <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down">
+              <ul class="dropdown-menu">
+                <li><img src="./images/icon-todo.svg" alt="todo">
+                  <a href="#">Todo List</a></li>
+                <li><img src="./images/icon-calendar.svg" alt="">
+                  <a href="#">Calendar</a></li>
+                <li><img src="./images/icon-reminders.svg" alt="">
+                  <a href="#">Reminders</a></li>
+                <li><img src="./images/icon-planning.svg" alt="">
+                  <a href="#">Planning</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Company</a>
+                <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down">
+                <ul class="dropdown-menu">
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+            <div class="login-signup-mobile">
+            <button class="login">Login</button>
+            <button class="signup">Register</button>
+            </div>
+            <span id="closeBar" class="close-icon">
+              <img src="./images/icon-close-menu.svg" alt="close-icon">
+            </span>
+          </ul>
+     </div>
+     <!-- Login/Signup -->
+      <div class="login-signup">
+        <button class="login">Login</button>
+        <button class="signup">Register</button>
+      </div>
+      <div id="openBar" class="menu-bar">
+          <img src="./images/icon-menu.svg" alt="">
+      </div>
+      <div id="overlay" class="overlay">
+
+      </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-info-container">
+        <div class="hero-info">
+            <h1>Make remote work</h1>
+            <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+            <button>Learn More</button>
+        </div>
+        <!-- Clents Logo-->
+        <div class="client">
+          <img src="./images/client-databiz.svg" alt="">
+          <img src="./images/client-audiophile.svg" alt="">
+          <img src="./images/client-maker.svg" alt="">
+          <img src="./images/client-meet.svg" alt="">
+        </div>
+      </div>
+      <!-- Hero Img -->
+       <div class="hero-img">
+        <img class="img-desktop"
+         src="./images/image-hero-desktop.png" alt="hero-img">
+         <img class="img-mobile"
+         src="./images/image-hero-mobile.png" alt="hero-img">
+       </div>
+    </div>
+    
+  </section>
+  <script src="./app.js"></script>
+</body>
+</html>
