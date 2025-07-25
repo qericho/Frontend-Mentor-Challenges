@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advice-Generator</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#06202B] flex items-center justify-center pt-[10%] text-[#fff]">
+    <div class="w-[450px] md:w-[700px] h-[500px] md:h-[400px] bg-[#273F4F] relative">
+        <div class="h-[100%] w-[100%] pb-5 px-2 flex flex-col items-center justify-evenly">
+            <h1 id="index"class="text-[16px] font-semibold text-green-300">ADVICE #0</h1>
+            <p id="advice" class="text-[18px] md:text-[28px] font-bold text-center py-10 md:px-0">
+              Click the dice to generate random advice!</p>
+            <div class="flex items-center justify-center">
+                <img src="./images/pattern-divider-desktop.svg" alt="divider">
+            </div>
+        </div>
+        <div id="dice"
+         class="absolute b-0 size-15 left-1/2 top-2/2 -translate-x-1/2 -translate-y-1/2
+         bg-green-300 hover:bg-green-400 flex items-center justify-center rounded-full cursor-pointer">
+          <img class="cursor-pointer"
+          src="./images/icon-dice.svg" alt="dice-icon">
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
